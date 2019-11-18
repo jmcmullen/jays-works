@@ -1,0 +1,17 @@
+$color-blue: #66c7f4;
+$color-rich: #093a3e;
+$color-black: #001011;
+$color-white: #f2f4f3;
+$color-dirty: #f3efe0;
+$color-grey: #d7cdcc;
+$color-red: #d33f49;
+
+$font-catamaran: 'Catamaran', sans-serif;
+
+// Responsiveness
+// These numbers are divisible by both 12 and 16
+$gap: 64px !default;
+$tablet: 769px !default;
+$desktop: 960px + (2 * $gap) !default;
+$widescreen: 1152px + (2 * $gap) !default;
+$fullhd: 1344px + (2 * $gap) !default;

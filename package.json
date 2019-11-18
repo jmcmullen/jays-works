@@ -1,0 +1,19 @@
+{
+  "name": "jays-works",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "dev": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0",
+    "hamburgers": "^1.1.3"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "style-resources-loader": "^1.3.2",
+    "vue-svg-loader": "^0.15.0"
+  }
+}
