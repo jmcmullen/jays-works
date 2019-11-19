@@ -21,11 +21,18 @@
         I can provide high quality features to existing applications or work
         with you to architect something from the ground up.
       </p>
+      <nav class="hero__links">
+        <a
+          href="https://jaymcmullen.typeform.com/to/l2NuGf"
+          target="_blank"
+          class="hero__link btn btn--primary"
+          to="/contact/"
+        >
+          <span>Contact Me</span>
+        </a>
+        <g-link class="hero__link btn" to="/portfolio/">Portfolio</g-link>
+      </nav>
     </div>
-    <nav class="hero__links">
-      <g-link class="hero__link btn btn--primary" to="/">Contact Me</g-link>
-      <g-link class="hero__link btn" to="/portfolio/">Portfolio</g-link>
-    </nav>
   </section>
 </template>
 
@@ -41,13 +48,27 @@ export default {
 
 <style lang="scss" scoped>
 .hero {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    margin-top: 5rem;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
   &__title {
     font-size: 24px;
     margin-bottom: 1rem;
     margin-top: 1.6rem;
+
+    @include desktop {
+      font-size: 46px;
+    }
   }
 
   &__copy {
+    font-size: 19px;
     margin-bottom: 1rem;
   }
 
@@ -62,13 +83,19 @@ export default {
   }
 
   &__text {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+
+    @include desktop {
+      max-width: 560px;
+      padding-right: 6rem;
+      align-self: center;
+    }
   }
 
   &__links {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
   }
 
   &__link {

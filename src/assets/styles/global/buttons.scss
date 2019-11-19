@@ -30,8 +30,7 @@ input[type='button'] {
   transition: all 0.3s ease-in;
 
   &:hover {
-    color: $color-black;
-    border-color: $color-black;
+    opacity: 0.7;
     outline: 0;
   }
 }
@@ -46,8 +45,6 @@ input[type='button'].btn--primary {
 
   &:hover,
   &:focus {
-    color: $color-white;
-    background-color: $color-black;
-    border-color: $color-black;
+    opacity: 0.7;
   }
 }
