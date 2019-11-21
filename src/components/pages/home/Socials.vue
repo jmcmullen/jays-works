@@ -39,6 +39,8 @@
 <style lang="scss">
   .socials {
     display: flex;
+    flex: 20 1 auto;
+
     flex-direction: column;
     justify-content: flex-end;
     width: 3rem;
