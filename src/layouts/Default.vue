@@ -6,12 +6,12 @@
 </template>
 
 <script>
-import Navbar from '../components/partials/Navbar';
-export default {
-  components: {
-    Navbar,
-  },
-};
+  import Navbar from '../components/partials/Navbar';
+  export default {
+    components: {
+      Navbar,
+    },
+  };
 </script>
 
 <static-query>
@@ -23,18 +23,11 @@ query {
 </static-query>
 
 <style>
-body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
-}
-
-.layout {
-  max-width: 1110px;
-  margin: 0 auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
+  body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+      Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
 </style>
