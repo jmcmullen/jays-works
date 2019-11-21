@@ -23,7 +23,7 @@
         >
           <span>Contact Me</span>
         </a>
-        <g-link class="hero__link btn" to="/portfolio/">Portfolio</g-link>
+        <!-- <g-link class="hero__link btn" to="/portfolio/">Portfolio</g-link> -->
       </nav>
     </div>
   </section>
@@ -95,9 +95,9 @@
       width: 100%;
       margin-bottom: 1rem;
 
-      &:first-of-type {
+      /* &:first-of-type {
         margin-right: 1rem;
-      }
+      } */
     }
   }
 </style>
