@@ -66,9 +66,8 @@
     }
 
     &__image {
-      max-width: 100%;
-      display: flex;
-      padding-right: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 2rem;
     }
 
     &__photo {
@@ -81,7 +80,8 @@
       @include desktop {
         max-width: 560px;
         padding-right: 6rem;
-        align-self: center;
+        margin-bottom: 0;
+        align-self: flex-end;
       }
     }
 
