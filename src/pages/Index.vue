@@ -2,28 +2,31 @@
   <Layout>
     <Hero />
     <Brands />
+    <Services />
   </Layout>
 </template>
 
 <script>
-  import Hero from '../components/pages/home/Hero';
-  import Brands from '../components/pages/home/Brands';
+import Hero from "../components/pages/home/Hero";
+import Brands from "../components/pages/home/Brands";
+import Services from "../components/pages/home/Services";
 
-  export default {
-    components: {
-      Hero,
-      Brands,
-    },
-    metaInfo: {
-      title: 'Freelance Web Developer',
-      description:
-        'Sydney based web developer with over 5 years experience. I can provide high quality features to existing applications or work with you to architect something from the ground up.',
-    },
-  };
+export default {
+  components: {
+    Hero,
+    Brands,
+    Services
+  },
+  metaInfo: {
+    title: "Freelance Web Developer",
+    description:
+      "Sydney based web developer with over 5 years experience. I can provide high quality features to existing applications or work with you to architect something from the ground up."
+  }
+};
 </script>
 
 <style>
-  .home-links a {
-    margin-right: 1rem;
-  }
+.home-links a {
+  margin-right: 1rem;
+}
 </style>

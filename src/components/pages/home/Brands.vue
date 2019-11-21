@@ -54,8 +54,12 @@
       color: #777;
       text-align: center;
       font-size: 1.2rem;
-      padding: 0 4rem;
+      padding: 0 2rem;
       margin-bottom: 1rem;
+
+      @include tablet {
+        padding: 0 4rem;
+      }
     }
 
     &__container {
