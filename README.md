@@ -1,14 +1,28 @@
-# Default starter for Gridsome
+# Jay McMullen's Portfolio
 
-This is the project you get when you run `gridsome create new-project`.
+![](/static/device-mockup.png)
 
-### 1. Install Gridsome CLI tool if you don't have
+My portfolio website written in Vue and Gridsome. Hosted on Netlify at: https://jays.works/
 
-`npm install --global @gridsome/cli`
+---
 
-### 2. Create a Gridsome project
+### Requirements
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+- [Install Node Version Manager](https://github.com/creationix/nvm)
+- [Yarn](https://yarnpkg.com/en/docs/install)
+
+### Installation
+
+```bash
+# install & use node 10.16.3
+nvm install && nvm run
+
+# install dependencies
+yarn install
+
+# Run local development server with hmr
+yarn dev
+
+# Generate static site
+yarn build
+```
