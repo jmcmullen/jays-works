@@ -1,17 +1,33 @@
 <template>
   <Layout>
-    <Services />
+    <Overview :work="$page.work.edges" />
   </Layout>
 </template>
 
 <script>
-import Services from '../components/pages/home/Services';
+import Overview from '../components/pages/portfolio/Overview';
+
 export default {
   components: {
-    Services
+    Overview,
   },
   metaInfo: {
-    title: 'About us'
-  }
+    title: 'Portfolio',
+  },
 };
 </script>
+
+<page-query>
+query Portfolio {
+  work: allPortfolio {
+    edges {
+      node {
+        title
+        technology
+        mobile(width: 95)
+        desktop(width: 300)
+      }
+    }
+  }
+}
+</page-query>

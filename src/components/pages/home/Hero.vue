@@ -1,18 +1,25 @@
 <template>
   <section class="hero container">
     <div class="hero__image">
-      <g-image class="hero__photo" src="../../../assets/images/jay-mcmullen.jpg" alt/>
-      <Socials/>
+      <g-image
+        class="hero__photo"
+        src="../../../assets/images/jay-mcmullen.jpg"
+        alt
+      />
+      <Socials />
     </div>
     <div class="hero__text">
-      <h2 class="hero__title">I make fast, secure, scalable sites and web applications.</h2>
+      <h2 class="hero__title">
+        I make fast, secure, scalable sites and web applications.
+      </h2>
       <p class="hero__copy">
-        Over the last {{ experience }} years, I've gained a ton of experience working with ecommerce, media & tech
-        related businesses across Sydney, Australia and London, UK.
+        Over the last {{ experience }} years, I've gained a ton of experience
+        working with ecommerce, media & tech related businesses across Sydney,
+        Australia and London, UK.
       </p>
       <p class="hero__copy">
-        I can provide high quality features to existing applications or work with you to architect
-        something from the ground up.
+        I can provide high quality features to existing applications or work
+        with you to architect something from the ground up.
       </p>
       <nav class="hero__links">
         <a
@@ -30,21 +37,21 @@
 </template>
 
 <script>
-import Socials from "./Socials";
+import Socials from './Socials';
 
 export default {
   computed: {
     experience() {
       const now = new Date();
-      const start = new Date("March 1, 2014 00:00:00");
+      const start = new Date('March 1, 2014 00:00:00');
       let diff = (now.getTime() - start.getTime()) / 1000;
       diff /= 60 * 60 * 24;
       return Math.abs(Math.ceil(diff / 365.25));
-    }
+    },
   },
   components: {
-    Socials
-  }
+    Socials,
+  },
 };
 </script>
 

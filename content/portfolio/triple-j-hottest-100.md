@@ -1,8 +1,8 @@
 ---
 title: 'Triple J - Hottest 100'
-technology: 'Handlebars, jQuery & Sass'
+technology: 'Handlebars, jQuery, SCSS, Webpack'
 link: 'https://www.abc.net.au/triplej/hottest100/16/'
-slug: 'koala'
-mobile: '/screenshots/koala.jpg'
-desktop: '/screenshots/koala.jpg'
+slug: 'triple-j'
+mobile: './screenshots/triplej_mobile.png'
+desktop: './screenshots/triplej_desktop.png'
 ---
