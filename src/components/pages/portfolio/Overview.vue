@@ -7,29 +7,36 @@
         All the frontend work is responsive and built mobile-first to present a
         great user experience.
       </p>
-      <p
-        class="overview__description"
-      >I'm familar with most of the website development technology around. My favourite technology to use is - Vue, Nuxt, Serverless, Node &amp; Netlify. However, I can also work with React, Angular, Docker, Heroku, AWS, &amp; Ruby on Rails.</p>
+      <p class="overview__description">
+        I'm familar with most of the website development technology around. My
+        favourite technology to use is - Vue, Nuxt, Serverless, Node &amp;
+        Netlify. However, I can also work with React, Angular, Docker, Heroku,
+        AWS, &amp; Ruby on Rails.
+      </p>
     </div>
     <div class="overview__screenshots">
-      <Screenshot v-for="project in work" :key="project.id" :project="project" />
+      <Screenshot
+        v-for="project in work"
+        :key="project.id"
+        :project="project"
+      />
     </div>
   </section>
 </template>
 
 <script>
-import Screenshot from "./Screenshot";
+import Screenshot from './Screenshot';
 
 export default {
   components: {
-    Screenshot
+    Screenshot,
   },
   props: {
     work: {
       type: Array,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 };
 </script>
 

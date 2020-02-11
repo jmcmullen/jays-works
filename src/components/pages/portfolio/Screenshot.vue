@@ -9,11 +9,19 @@
           <div class="screenshot__desktop-menu-btn" />
           <div class="screenshot__desktop-menu-bar" />
         </div>
-        <g-image :src="project.node.desktop" class="screenshot__desktop-image" />
+        <g-image
+          v-if="project.node.desktop"
+          :src="project.node.desktop"
+          class="screenshot__desktop-image"
+        />
       </div>
       <div class="screenshot__mobile">
         <div class="screenshot__mobile-notch" />
-        <g-image :src="project.node.mobile" class="screenshot__mobile-image" />
+        <g-image
+          v-if="project.node.mobile"
+          :src="project.node.mobile"
+          class="screenshot__mobile-image"
+        />
       </div>
     </div>
   </div>
@@ -24,9 +32,9 @@ export default {
   props: {
     project: {
       type: Object,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 };
 </script>
 
