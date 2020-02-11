@@ -1,18 +1,33 @@
 <template>
   <Layout>
-    <h1>About us</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi,
-      eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores
-      inventore iste reprehenderit maxime! Iusto.
-    </p>
+    <Overview :work="$page.work.edges" />
   </Layout>
 </template>
 
 <script>
-  export default {
-    metaInfo: {
-      title: 'About us',
-    },
-  };
+import Overview from '../components/pages/portfolio/Overview';
+
+export default {
+  components: {
+    Overview,
+  },
+  metaInfo: {
+    title: 'Portfolio',
+  },
+};
 </script>
+
+<page-query>
+query Portfolio {
+  work: allPortfolio {
+    edges {
+      node {
+        title
+        technology
+        mobile(width: 95)
+        desktop(width: 300)
+      }
+    }
+  }
+}
+</page-query>
