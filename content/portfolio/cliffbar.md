@@ -1,8 +1,8 @@
 ---
-title: 'Cliffbar'
+title: 'Clifbar'
 technology: 'HTML5, SCSS, Blade'
 link: 'https://www.clifbar.com/'
-slug: 'cliffbar'
-mobile: './screenshots/cliffbar_mobile.png'
-desktop: './screenshots/cliffbar_desktop.png'
+slug: 'clifbar'
+mobile: './screenshots/clifbar_mobile.png'
+desktop: './screenshots/clifbar_desktop.png'
 ---
