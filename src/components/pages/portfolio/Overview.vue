@@ -57,8 +57,12 @@ export default {
   &__screenshots {
     padding: 2rem 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 1rem;
+
+    @include tablet {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 }
 </style>
