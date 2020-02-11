@@ -11,7 +11,7 @@
         I'm familar with most of the website development technology around. My
         favourite technology to use is - Vue, Nuxt, Serverless, Node &amp;
         Netlify. However, I can also work with React, Angular, Docker, Heroku,
-        AWS, &amp; Ruby on Rails.
+        AWS, &amp; Ruby on Rails and many more.
       </p>
     </div>
     <div class="overview__screenshots">
