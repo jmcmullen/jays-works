@@ -1,13 +1,13 @@
 <template>
   <section class="hero container">
     <div class="hero__image">
-      <g-image class="hero__photo" src="../../../assets/images/jay-mcmullen.jpg" alt />
-      <Socials />
+      <g-image class="hero__photo" src="../../../assets/images/jay-mcmullen.jpg" alt/>
+      <Socials/>
     </div>
     <div class="hero__text">
       <h2 class="hero__title">I make fast, secure, scalable sites and web applications.</h2>
       <p class="hero__copy">
-        Over the last 5 years, I've gained a ton of experience working with ecommerce, media & tech
+        Over the last {{ experience }} years, I've gained a ton of experience working with ecommerce, media & tech
         related businesses across Sydney, Australia and London, UK.
       </p>
       <p class="hero__copy">
@@ -30,74 +30,83 @@
 </template>
 
 <script>
-  import Socials from './Socials';
+import Socials from "./Socials";
 
-  export default {
-    components: {
-      Socials,
-    },
-  };
+export default {
+  computed: {
+    experience() {
+      const now = new Date();
+      const start = new Date("March 1, 2014 00:00:00");
+      let diff = (now.getTime() - start.getTime()) / 1000;
+      diff /= 60 * 60 * 24;
+      return Math.abs(Math.ceil(diff / 365.25));
+    }
+  },
+  components: {
+    Socials
+  }
+};
 </script>
 
 <style lang="scss" scoped>
-  .hero {
-    display: flex;
-    flex-direction: column;
+.hero {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    margin-top: 5rem;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    margin-top: 1.6rem;
 
     @include desktop {
-      margin-top: 5rem;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-    }
-
-    &__title {
-      font-size: 24px;
-      margin-bottom: 1rem;
-      margin-top: 1.6rem;
-
-      @include desktop {
-        font-size: 46px;
-      }
-    }
-
-    &__copy {
-      font-size: 19px;
-      margin-bottom: 1rem;
-    }
-
-    &__image {
-      display: grid;
-      grid-template-columns: 1fr 2rem;
-    }
-
-    &__photo {
-      padding-right: 1rem;
-    }
-
-    &__text {
-      margin-bottom: 2rem;
-
-      @include desktop {
-        max-width: 560px;
-        padding-right: 6rem;
-        margin-bottom: 0;
-        align-self: flex-end;
-      }
-    }
-
-    &__links {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 2rem;
-    }
-
-    &__link {
-      width: 100%;
-      margin-bottom: 1rem;
-
-      /* &:first-of-type {
-        margin-right: 1rem;
-      } */
+      font-size: 46px;
     }
   }
+
+  &__copy {
+    font-size: 19px;
+    margin-bottom: 1rem;
+  }
+
+  &__image {
+    display: grid;
+    grid-template-columns: 1fr 2rem;
+  }
+
+  &__photo {
+    padding-right: 1rem;
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+
+    @include desktop {
+      max-width: 560px;
+      padding-right: 6rem;
+      margin-bottom: 0;
+      align-self: flex-end;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+  &__link {
+    width: 100%;
+    margin-bottom: 1rem;
+
+    /* &:first-of-type {
+        margin-right: 1rem;
+      } */
+  }
+}
 </style>
