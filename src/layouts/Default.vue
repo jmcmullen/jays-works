@@ -1,20 +1,24 @@
 <template>
   <div class="layout">
-    <Navbar />
-    <slot />
-    <Footer />
+    <div class="layout__fixed-nav">
+      <Navbar />
+    </div>
+    <div class="layout__content">
+      <slot />
+      <Footer />
+    </div>
   </div>
 </template>
 
 <script>
-  import Navbar from '../components/partials/Navbar';
-  import Footer from '../components/partials/Footer';
-  export default {
-    components: {
-      Navbar,
-      Footer,
-    },
-  };
+import Navbar from '../components/partials/Navbar';
+import Footer from '../components/partials/Footer';
+export default {
+  components: {
+    Navbar,
+    Footer,
+  },
+};
 </script>
 
 <static-query>
@@ -25,12 +29,24 @@ query {
 }
 </static-query>
 
-<style>
-  body {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
-      Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
+<style lang="scss">
+body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.layout {
+  &__fixed-nav {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
   }
+
+  &__content {
+    margin-top: 100px;
+  }
+}
 </style>
