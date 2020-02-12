@@ -60,9 +60,10 @@ export default {
     padding: 2rem 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
 
     @include tablet {
+      grid-gap: 1rem;
       grid-template-columns: 1fr 1fr 1fr;
     }
   }

@@ -48,7 +48,7 @@ export default {
 
   &__title {
     font-size: 1.4rem;
-    margin-bottom: 0;
+    margin-bottom: -10px;
   }
 
   &__wrapper {
@@ -64,6 +64,7 @@ export default {
     position: absolute;
     border: 5px solid $color-dark-grey;
     border-bottom: 1px solid $color-dark-grey;
+    border-radius: 5px;
     background-color: $color-dark-grey;
     overflow: hidden;
     width: 90%;
@@ -79,6 +80,7 @@ export default {
         height: 5px;
         background-color: $color-grey;
         margin-right: 3px;
+        border-radius: 5px;
       }
 
       &-bar {
@@ -86,6 +88,7 @@ export default {
         height: 5px;
         background-color: $color-grey;
         margin-right: 3px;
+        border-radius: 5px;
       }
     }
   }
@@ -93,6 +96,7 @@ export default {
   &__mobile {
     position: absolute;
     border: 5px solid $color-dark-grey;
+    border-radius: 15px;
     right: 0px;
     top: 60px;
     overflow: hidden;
