@@ -1,5 +1,5 @@
 <template>
-  <div class="screenshot">
+  <div class="screenshot" @click="open()">
     <h3 class="screenshot__title">{{ project.node.title }}</h3>
     <div class="screenshot__wrapper">
       <div class="screenshot__desktop">
@@ -35,6 +35,12 @@ export default {
       required: true,
     },
   },
+  methods: {
+    open() {
+      console.log(this.project.node);
+      window.open(this.project.node.link, '_blank');
+    },
+  },
 };
 </script>
 
@@ -45,6 +51,13 @@ export default {
   flex-grow: none;
   flex-direction: column;
   padding: 1rem 1rem 0;
+  transition: transform 0.3s ease 0s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    overflow: visible;
+  }
 
   &__title {
     font-size: 1.4rem;

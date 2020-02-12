@@ -26,6 +26,7 @@ query Portfolio {
         technology
         mobile(width: 95)
         desktop(width: 300)
+        link
       }
     }
   }
