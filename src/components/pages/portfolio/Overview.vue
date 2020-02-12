@@ -3,15 +3,17 @@
     <div class="overview__text">
       <h2 class="overview__title">Some projects I've worked on</h2>
       <p class="overview__description">
-        I take pride in delivering projects on schedule with high-quality work.
-        All the frontend work is responsive and built mobile-first to present a
-        great user experience.
+        I take pride in delivering high-quality projects on schedule. All the
+        frontend work is responsive and built mobile-first to present a great
+        user experience. All the backend work is built to be scalable and
+        perform quickly.
       </p>
       <p class="overview__description">
-        I'm familar with most of the website development technology around. My
-        favourite technology to use is - Vue, Nuxt, Serverless, Node &amp;
-        Netlify. However, I can also work with React, Angular, Docker, Heroku,
-        AWS, &amp; Ruby on Rails and many more.
+        I'm familiar with most of the website development technology around. My
+        preferred stack to use is - Vue, Serverless, Node &amp; Netlify.
+        However, I'm across all modern development technologies including React,
+        Angular, Ruby on Rails, Python, Docker, Heroku, AWS, &amp; and many
+        more.
       </p>
     </div>
     <div class="overview__screenshots">
