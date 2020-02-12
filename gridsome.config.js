@@ -33,6 +33,25 @@ module.exports = {
         cacheTime: 600000,
       },
     },
+    {
+      use: 'gridsome-plugin-pwa',
+      options: {
+        title: 'Jay McMullen',
+        startUrl: '/',
+        display: 'standalone',
+        statusBarStyle: 'default',
+        manifestPath: 'manifest.json',
+        disableServiceWorker: true,
+        serviceWorkerPath: 'service-worker.js',
+        cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
+        shortName: 'Jay M',
+        themeColor: '#1a1a1a',
+        backgroundColor: '#ffffff',
+        icon: './android-chrome-512x515.png', // must be provided
+        msTileImage: '',
+        msTileColor: '#1a1a1a',
+      },
+    },
   ],
   transformers: {
     remark: {
