@@ -47,7 +47,7 @@ module.exports = {
         shortName: 'Jay M',
         themeColor: '#1a1a1a',
         backgroundColor: '#ffffff',
-        icon: '.src/static/android-chrome-512x515.png',
+        icon: './src/favicon.png',
         msTileImage: '',
         msTileColor: '#1a1a1a',
       },
