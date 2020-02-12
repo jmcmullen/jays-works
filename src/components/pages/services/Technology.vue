@@ -149,6 +149,7 @@
 
     @include mobile {
       width: 64px;
+      height: 64px;
     }
   }
 }
