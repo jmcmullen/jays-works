@@ -14,7 +14,7 @@
     </button>
 
     <nav :class="menuStyle">
-      <div class="navbar__menu-container container">
+      <div class="navbar__menu-container container" @click="toggleMenu">
         <g-link class="navbar__link" to="/">Home</g-link>
         <g-link class="navbar__link" to="/portfolio/">Portfolio</g-link>
         <g-link class="navbar__link" to="/services/">Services</g-link>
