@@ -30,6 +30,7 @@
         </p>
       </div>
     </div>
+    <g-link class="services__btn btn" to="/services">More details</g-link>
   </section>
 </template>
 
@@ -77,6 +78,15 @@
 
     @include desktop {
       font-size: 2.3rem;
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin: 2rem auto 0;
+
+    @include tablet {
+      max-width: 200px;
     }
   }
 }
