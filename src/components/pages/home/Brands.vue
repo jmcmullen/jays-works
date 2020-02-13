@@ -79,6 +79,7 @@ export default {
 
   &__btn {
     display: block;
+    width: 100%;
     margin: 2rem auto 0;
 
     @include tablet {

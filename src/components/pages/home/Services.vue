@@ -83,10 +83,11 @@
 
   &__btn {
     display: block;
-    margin: 2rem auto 0;
+    margin: 2rem 2rem 0;
 
     @include tablet {
       max-width: 200px;
+      margin: 2rem auto 0;
     }
   }
 }
