@@ -12,28 +12,37 @@
         These are projects I have worked on either alone or in a team during my
         career as a software developer. More details about my work history can
         be found on my
-        <a href="https://linkedin.com/in/j-mcmullen" target="_blank">LinkedIn</a>.
+        <a
+          class="overview__link"
+          href="https://linkedin.com/in/j-mcmullen"
+          target="_blank"
+          >LinkedIn</a
+        >.
       </p>
     </div>
     <div class="overview__screenshots">
-      <Screenshot v-for="project in work" :key="project.id" :project="project" />
+      <Screenshot
+        v-for="project in work"
+        :key="project.id"
+        :project="project"
+      />
     </div>
   </section>
 </template>
 
 <script>
-import Screenshot from "./Screenshot";
+import Screenshot from './Screenshot';
 
 export default {
   components: {
-    Screenshot
+    Screenshot,
   },
   props: {
     work: {
       type: Array,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 };
 </script>
 
@@ -49,6 +58,10 @@ export default {
     line-height: 1.6;
     margin-bottom: 1rem;
     font-size: 19px;
+  }
+
+  &__link {
+    text-decoration: underline;
   }
 
   &__screenshots {
