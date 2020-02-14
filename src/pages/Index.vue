@@ -2,7 +2,7 @@
   <Layout>
     <Hero />
     <Brands />
-    <Services />
+    <Services :button="true" />
   </Layout>
 </template>
 
@@ -42,12 +42,11 @@ export default {
         content:
           'Sydney based web developer with over 6 years experience. I can provide high quality features to existing applications or work with you to architect something from the ground up.',
       },
-      { property: 'fb:app_id', content: '123456789' },
       {
         property: 'og:title',
         content: 'Jay McMullen - Freelance Web Developer',
       },
-      { p: 'og:image', c: 'https://jays.works/jay-mcmullen.png' },
+      { property: 'og:image', content: 'https://jays.works/jay-mcmullen.png' },
     ],
   },
 };

@@ -30,9 +30,22 @@
         </p>
       </div>
     </div>
-    <g-link class="services__btn btn" to="/services">More details</g-link>
+    <g-link v-if="button" class="services__btn btn" to="/services">
+      More details
+    </g-link>
   </section>
 </template>
+
+<script>
+export default {
+  props: {
+    button: {
+      type: Boolean,
+      default: false,
+    },
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 .services {
