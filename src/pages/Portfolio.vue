@@ -56,6 +56,7 @@ query Portfolio {
         mobile(width: 95)
         desktop(width: 300)
         link
+        slug
       }
     }
   }

@@ -16,33 +16,28 @@
           class="overview__link"
           href="https://linkedin.com/in/j-mcmullen"
           target="_blank"
-          >LinkedIn</a
-        >.
+        >LinkedIn</a>.
       </p>
     </div>
-    <div class="overview__screenshots">
-      <Screenshot
-        v-for="project in work"
-        :key="project.id"
-        :project="project"
-      />
+    <div class="overview__cards">
+      <Card v-for="project in work" :key="project.id" :project="project" />
     </div>
   </section>
 </template>
 
 <script>
-import Screenshot from './Screenshot';
+import Card from "./Card";
 
 export default {
   components: {
-    Screenshot,
+    Card
   },
   props: {
     work: {
       type: Array,
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 };
 </script>
 
@@ -64,7 +59,7 @@ export default {
     text-decoration: underline;
   }
 
-  &__screenshots {
+  &__cards {
     padding: 2rem 0;
     display: grid;
     grid-template-columns: 1fr;

@@ -93,7 +93,7 @@ export default {
     background-color: $color-black;
     padding: 8rem 2rem;
     transition: all 0.3s ease 0s;
-    z-index: 1;
+    z-index: 5;
 
     &--is-active {
       top: 0;
