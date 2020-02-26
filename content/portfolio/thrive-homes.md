@@ -1,6 +1,6 @@
 ---
 title: 'Thrive Homes'
-technology: 'React, SCSS, Webpack'
+technology: 'React, SCSS Modules, Webpack'
 link: 'https://thrivehomes.com.au'
 slug: 'thrive-homes'
 mobile: './screenshots/thrivehomes_mobile.png'

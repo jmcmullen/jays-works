@@ -1,6 +1,6 @@
 ---
 title: 'Mettrr'
-technology: 'Vue, Nuxt, Netlify CMS'
+technology: 'Vue, Nuxt, Netlify CMS, Webpack'
 link: 'https://mettrr.com'
 slug: 'mettrr'
 mobile: './screenshots/mettrr_mobile.png'

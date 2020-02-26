@@ -1,6 +1,6 @@
 ---
 title: 'PayPal Unskippable'
-technology: 'HTML5, Vanilla JS'
+technology: 'HTML5, jQuery, Youtube'
 link: 'https://paypal-unskippable.netlify.com/'
 slug: 'paypal-unskippable'
 mobile: './screenshots/paypal-unskippable_mobile.png'
