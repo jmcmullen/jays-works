@@ -5,6 +5,7 @@
       href="https://www.upwork.com/o/profiles/users/~01a20265fabe11c1dd/"
       rel="noreferrer"
       target="_blank"
+      aria-label="open my upwork"
     >
       <UpWork class="socials__icon" />
     </a>
@@ -13,6 +14,7 @@
       href="https://github.com/jmcmullen"
       rel="noreferrer"
       target="_blank"
+      aria-label="open my github"
     >
       <Github class="socials__icon" />
     </a>
@@ -21,6 +23,7 @@
       href="https://linkedin.com/in/j-mcmullen"
       rel="noreferrer"
       target="_blank"
+      aria-label="open my linkedin"
     >
       <LinkedIn class="socials__icon" />
     </a>
@@ -29,6 +32,7 @@
       href="https://soundcloud.com/jjmcmullen"
       rel="noreferrer"
       target="_blank"
+      aria-label="open my soundcloud"
     >
       <Soundcloud class="socials__icon" />
     </a>
@@ -37,6 +41,7 @@
       href="https://twitter.com/jaymcmullen10"
       rel="noreferrer"
       target="_blank"
+      aria-label="open my twitter"
     >
       <Twitter class="socials__icon" />
     </a>
@@ -45,6 +50,7 @@
       href="https://instagram.com/jjmcmullen"
       rel="noreferrer"
       target="_blank"
+      aria-label="open my instagram"
     >
       <Instagram class="socials__icon" />
     </a>
