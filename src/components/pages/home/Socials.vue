@@ -3,6 +3,7 @@
     <a
       class="socials__link"
       href="https://www.upwork.com/o/profiles/users/~01a20265fabe11c1dd/"
+      rel="noreferrer"
       target="_blank"
     >
       <UpWork class="socials__icon" />
@@ -10,6 +11,7 @@
     <a
       class="socials__link"
       href="https://github.com/jmcmullen"
+      rel="noreferrer"
       target="_blank"
     >
       <Github class="socials__icon" />
@@ -17,6 +19,7 @@
     <a
       class="socials__link"
       href="https://linkedin.com/in/j-mcmullen"
+      rel="noreferrer"
       target="_blank"
     >
       <LinkedIn class="socials__icon" />
@@ -24,20 +27,27 @@
     <a
       class="socials__link"
       href="https://soundcloud.com/jjmcmullen"
+      rel="noreferrer"
       target="_blank"
     >
-      <Soundcloud class="socials__icon" /> </a
-    ><a
+      <Soundcloud class="socials__icon" />
+    </a>
+    <a
       class="socials__link"
       href="https://twitter.com/jaymcmullen10"
+      rel="noreferrer"
       target="_blank"
     >
       <Twitter class="socials__icon" />
     </a>
-    <!-- 
-    <a class="socials__link" href="https://instagram.com/jjmcmullen" target="_blank">
+    <a
+      class="socials__link"
+      href="https://instagram.com/jjmcmullen"
+      rel="noreferrer"
+      target="_blank"
+    >
       <Instagram class="socials__icon" />
-    </a> -->
+    </a>
   </div>
 </template>
 

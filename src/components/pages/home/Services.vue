@@ -30,9 +30,13 @@
         </p>
       </div>
     </div>
-    <g-link v-if="button" class="services__btn btn" to="/services">
-      More details
-    </g-link>
+    <g-link
+      v-if="button"
+      class="services__btn btn"
+      to="/services"
+      aria-label="more details"
+      >More details</g-link
+    >
   </section>
 </template>
 

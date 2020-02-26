@@ -7,7 +7,12 @@
       </g-link>
     </h5>
 
-    <button :class="hamburgerStyle" type="button" @click="toggleMenu">
+    <button
+      :class="hamburgerStyle"
+      type="button"
+      @click="toggleMenu"
+      aria-label="open menu"
+    >
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
       </span>
@@ -21,6 +26,7 @@
         <g-link
           class="navbar__link"
           href="https://jaymcmullen.typeform.com/to/l2NuGf"
+          rel="noreferrer"
           >Contact</g-link
         >
       </div>

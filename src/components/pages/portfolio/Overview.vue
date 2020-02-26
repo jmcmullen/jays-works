@@ -15,8 +15,10 @@
         <a
           class="overview__link"
           href="https://linkedin.com/in/j-mcmullen"
+          rel="noreferrer"
           target="_blank"
-        >LinkedIn</a>.
+          >LinkedIn</a
+        >.
       </p>
     </div>
     <div class="overview__cards">
@@ -26,18 +28,18 @@
 </template>
 
 <script>
-import Card from "./Card";
+import Card from './Card';
 
 export default {
   components: {
-    Card
+    Card,
   },
   props: {
     work: {
       type: Array,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 };
 </script>
 

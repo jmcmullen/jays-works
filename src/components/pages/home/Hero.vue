@@ -24,6 +24,7 @@
       <nav class="hero__links">
         <a
           href="https://jaymcmullen.typeform.com/to/l2NuGf"
+          rel="noreferrer"
           target="_blank"
           class="hero__link btn btn--primary"
           to="/contact/"

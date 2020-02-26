@@ -13,6 +13,7 @@
             class="folio__btn btn btn--primary"
             target="_blank"
             :href="$page.portfolio.link"
+            rel="noreferrer"
             >View Live</a
           >
         </div>
