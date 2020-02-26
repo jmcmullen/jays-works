@@ -11,7 +11,7 @@ export default function(Vue, { router, head, isClient }) {
 
     WebFont.load({
       google: {
-        families: ['Catamaran:n4,n7'],
+        families: ['Catamaran:n4,n7&display=swap'],
       },
     });
   }
