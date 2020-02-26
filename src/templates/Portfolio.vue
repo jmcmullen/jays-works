@@ -71,6 +71,7 @@ export default {
     width: 100%;
     display: flex;
     flex-basis: auto;
+    align-items: flex-start;
     justify-content: center;
     background: $color-white;
     padding: 4rem 2rem;
