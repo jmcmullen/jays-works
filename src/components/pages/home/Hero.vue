@@ -9,9 +9,9 @@
       <Socials />
     </div>
     <div class="hero__text">
-      <h2 class="hero__title">
+      <h1 class="hero__title">
         I make fast, secure, scalable sites and web applications.
-      </h2>
+      </h1>
       <p class="hero__copy">
         Over the last {{ experience }} years, I've gained a ton of experience
         working with ecommerce, media & tech related businesses across Sydney,
@@ -68,17 +68,11 @@ export default {
   }
 
   &__title {
-    font-size: 24px;
     margin-bottom: 1rem;
     margin-top: 1.6rem;
-
-    @include desktop {
-      font-size: 46px;
-    }
   }
 
   &__copy {
-    font-size: 19px;
     margin-bottom: 1rem;
   }
 
@@ -98,7 +92,7 @@ export default {
       max-width: 560px;
       padding-right: 6rem;
       margin-bottom: 0;
-      align-self: flex-end;
+      align-self: center;
     }
   }
 
@@ -110,11 +104,6 @@ export default {
 
   &__link {
     width: 100%;
-    margin-bottom: 1rem;
-
-    /* &:first-of-type {
-        margin-right: 1rem;
-      } */
   }
 }
 </style>

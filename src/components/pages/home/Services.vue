@@ -1,9 +1,9 @@
 <template>
   <section class="services container" id="services">
-    <h5 class="services__title">Some of the things that I'm good at:</h5>
+    <h3 class="services__title">Some of the things that I'm good at:</h3>
     <div class="services__text">
       <div class="services__item">
-        <h4 class="services__heading">Front End Development</h4>
+        <h2 class="services__heading">Front End Development</h2>
         <p class="services__description">
           I'll bring your visuals to life through custom code written in HTML,
           CSS, and Javascript. Ensuring that your designs are responsive to all
@@ -12,7 +12,7 @@
         </p>
       </div>
       <div class="services__item">
-        <h4 class="services__heading">Back End Development</h4>
+        <h2 class="services__heading">Back End Development</h2>
         <p class="services__description">
           Although it’s invisible to the end user, this is one of the most
           important steps in any web-based project. The backend is in charge of
@@ -21,7 +21,7 @@
         </p>
       </div>
       <div class="services__item">
-        <h4 class="services__heading">Fully Managed Website Hosting</h4>
+        <h2 class="services__heading">Managed Website&nbsp;Hosting</h2>
         <p class="services__description">
           Once you have something made, we need to find a place for it to live.
           I'll manage your infrastructure and ensure your applications are
@@ -60,19 +60,13 @@ export default {
   }
 
   &__title {
-    font-size: 2rem;
     padding: 0 2rem;
-
-    @include desktop {
-      font-size: 1.5rem;
-    }
   }
 
   &__text {
     display: flex;
     flex-direction: column;
     padding: 0 2rem;
-    font-size: 19px;
 
     @include desktop {
       justify-content: space-between;
@@ -89,13 +83,8 @@ export default {
   }
 
   &__heading {
-    font-size: 2rem;
     color: $color-dark-grey;
     margin-bottom: 0.5rem;
-
-    @include desktop {
-      font-size: 2.3rem;
-    }
   }
 
   &__btn {

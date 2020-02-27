@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="footer__cta">
       <div class="footer__cta-container container">
-        <h4 class="footer__title">Got a project for me?</h4>
+        <h2 class="footer__title">Got a project for me?</h2>
         <a
           href="https://jaymcmullen.typeform.com/to/l2NuGf"
           rel="noreferrer"
@@ -51,7 +51,6 @@
   }
 
   &__title {
-    font-size: 2rem;
     color: $color-white;
     margin: 0;
   }
