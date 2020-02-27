@@ -6,13 +6,10 @@
 </template>
 
 <script>
-import Services from '../components/pages/home/Services';
-import Technology from '../components/pages/services/Technology';
-
 export default {
   components: {
-    Services,
-    Technology,
+    Services: () => import('../components/pages/home/Services'),
+    Technology: () => import('../components/pages/services/Technology'),
   },
   metaInfo: {
     title: 'Services',

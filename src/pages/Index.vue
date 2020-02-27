@@ -7,15 +7,11 @@
 </template>
 
 <script>
-import Hero from '../components/pages/home/Hero';
-import Brands from '../components/pages/home/Brands';
-import Services from '../components/pages/home/Services';
-
 export default {
   components: {
-    Hero,
-    Brands,
-    Services,
+    Hero: () => import('../components/pages/home/Hero'),
+    Brands: () => import('../components/pages/home/Brands'),
+    Services: () => import('../components/pages/home/Services'),
   },
   metaInfo: {
     title: 'Freelance Web Developer',
