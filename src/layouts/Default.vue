@@ -11,12 +11,10 @@
 </template>
 
 <script>
-import Navbar from '../components/partials/Navbar';
-import Footer from '../components/partials/Footer';
 export default {
   components: {
-    Navbar,
-    Footer,
+    Navbar: () => import('../components/partials/Navbar'),
+    Footer: () => import('../components/partials/Footer'),
   },
 };
 </script>
