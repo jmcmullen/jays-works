@@ -1,8 +1,8 @@
 <template>
   <section class="brands">
-    <h5 class="brands__title container">
+    <h3 class="brands__title container">
       Some of the brands I've previously worked with include...
-    </h5>
+    </h3>
     <div class="brands__container container">
       <div class="brands__brand" v-for="brand in brands" :key="brand.name">
         <g-image :src="brand.logo" :alt="brand.name" />
@@ -54,7 +54,6 @@ export default {
   &__title {
     color: #777;
     text-align: center;
-    font-size: 1.2rem;
     padding: 0 2rem;
     margin-bottom: 1rem;
 

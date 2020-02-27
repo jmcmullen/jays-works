@@ -136,7 +136,7 @@ export default {
   }
 
   &__brand {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 1;
     letter-spacing: 0.1rem;

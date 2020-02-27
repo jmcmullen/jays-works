@@ -54,7 +54,6 @@ export default {
   }
 
   &__title {
-    font-size: 1.2rem;
     margin: 0;
     text-align: center;
   }

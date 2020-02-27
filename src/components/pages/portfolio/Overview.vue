@@ -47,14 +47,9 @@ export default {
 .overview {
   padding: 3rem 2rem;
 
-  &__title {
-    font-size: 3rem;
-  }
-
   &__description {
     line-height: 1.6;
     margin-bottom: 1rem;
-    font-size: 19px;
   }
 
   &__link {

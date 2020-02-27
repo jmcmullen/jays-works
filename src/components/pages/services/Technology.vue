@@ -99,13 +99,8 @@
     }
   }
 
-  &__title {
-    font-size: 2rem;
-  }
-
   &__description {
     margin-bottom: 1rem;
-    font-size: 19px;
   }
 
   &__left {

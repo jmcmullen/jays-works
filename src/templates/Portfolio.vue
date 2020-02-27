@@ -3,8 +3,8 @@
     <div class="folio container">
       <div class="folio__top">
         <div class="folio__left">
-          <h1 class="folio__title">{{ $page.portfolio.title }}</h1>
-          <h4 class="folio__subtitle">Technology</h4>
+          <h2 class="folio__title">{{ $page.portfolio.title }}</h2>
+          <h3 class="folio__subtitle">Technology</h3>
           {{ $page.portfolio.technology }}
         </div>
         <div class="folio__right">
@@ -100,12 +100,7 @@ export default {
     }
   }
 
-  &__title {
-    font-size: 2rem;
-  }
-
   &__subtitle {
-    font-size: 1.2rem;
     margin-bottom: 0;
   }
 
