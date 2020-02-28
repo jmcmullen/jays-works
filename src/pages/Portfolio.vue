@@ -5,9 +5,11 @@
 </template>
 
 <script>
+import Overview from '../components/pages/portfolio/Overview';
+
 export default {
   components: {
-    Overview: () => import('../components/pages/portfolio/Overview'),
+    Overview,
   },
   metaInfo: {
     title: 'Portfolio',

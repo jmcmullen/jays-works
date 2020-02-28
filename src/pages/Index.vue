@@ -7,9 +7,11 @@
 </template>
 
 <script>
+import Hero from '../components/pages/home/Hero';
+
 export default {
   components: {
-    Hero: () => import('../components/pages/home/Hero'),
+    Hero,
     Brands: () => import('../components/pages/home/Brands'),
     Services: () => import('../components/pages/home/Services'),
   },

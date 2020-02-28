@@ -3,10 +3,13 @@
     <div class="layout__fixed-nav">
       <Navbar />
     </div>
-    <div class="layout__content">
-      <slot />
-      <Footer />
-    </div>
+
+    <transition name="fade" appear>
+      <div class="layout__content">
+        <slot />
+        <Footer />
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -47,5 +50,13 @@ body {
   &__content {
     margin-top: 100px;
   }
+}
+
+.fade-enter-active {
+  transition: opacity 0.3s;
+}
+
+.fade-enter {
+  opacity: 0;
 }
 </style>
