@@ -20,15 +20,23 @@
 
     <nav :class="menuStyle">
       <div class="navbar__menu-container container">
-        <g-link class="navbar__link" to="/">Home</g-link>
-        <g-link class="navbar__link" to="/portfolio/">Portfolio</g-link>
-        <g-link class="navbar__link" to="/services/">Services</g-link>
-        <g-link
-          class="navbar__link"
-          href="https://jaymcmullen.typeform.com/to/l2NuGf"
-          rel="noreferrer"
-          >Contact</g-link
-        >
+        <div class="navbar__link" @click="closeMenu('/')" >
+          <g-link class="navbar__link-btn" to="/">Home</g-link>
+        </div>
+        <div class="navbar__link" @click="closeMenu('/portfolio/')" >
+          <g-link class="navbar__link-btn" to="/portfolio/">Portfolio</g-link>
+        </div>
+        <div class="navbar__link" @click="closeMenu('/services/')" >
+          <g-link class="navbar__link-btn" to="/services/">Services</g-link>
+        </div>
+        <div class="navbar__link" >
+          <g-link
+            class="navbar__link-btn"
+            href="https://jaymcmullen.typeform.com/to/l2NuGf"
+            rel="noreferrer"
+            >Contact</g-link
+          >
+        </div>
       </div>
     </nav>
   </header>
@@ -67,8 +75,13 @@ export default {
   },
   methods: {
     toggleMenu() {
-      this.isMenuOpen = !this.isMenuOpen;
+        this.isMenuOpen = !this.isMenuOpen;
     },
+    closeMenu(link) {
+      if(link === this.$router.currentRoute.path) {
+        this.isMenuOpen = false;
+      }
+    }
   },
 };
 </script>
@@ -114,24 +127,27 @@ export default {
   }
 
   &__link {
-    color: $color-white;
-    font-family: $font-catamaran;
-    font-size: 1.5rem;
-    font-weight: bold;
-    line-height: 1.35;
-    text-transform: uppercase;
-    margin: 1rem 0;
-    opacity: 0.7;
     text-align: center;
-    transition: opacity 0.3s ease 0s;
+    margin: 1rem 0;
 
-    @include tablet {
-      font-size: 2rem;
-      margin: 2rem 0;
-    }
+    &-btn {
+      color: $color-white;
+      font-family: $font-catamaran;
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 1.35;
+      text-transform: uppercase;
+      opacity: 0.7;
+      transition: opacity 0.3s ease 0s;
 
-    &:hover {
-      opacity: 1;
+      @include tablet {
+        font-size: 2rem;
+        margin: 2rem 0;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 
