@@ -27,33 +27,6 @@
     >
       <LinkedIn class="socials__icon" />
     </a>
-    <a
-      class="socials__link"
-      href="https://soundcloud.com/jjmcmullen"
-      rel="noreferrer"
-      target="_blank"
-      aria-label="open my soundcloud"
-    >
-      <Soundcloud class="socials__icon" />
-    </a>
-    <a
-      class="socials__link"
-      href="https://twitter.com/jaymcmullen10"
-      rel="noreferrer"
-      target="_blank"
-      aria-label="open my twitter"
-    >
-      <Twitter class="socials__icon" />
-    </a>
-    <a
-      class="socials__link"
-      href="https://instagram.com/jjmcmullen"
-      rel="noreferrer"
-      target="_blank"
-      aria-label="open my instagram"
-    >
-      <Instagram class="socials__icon" />
-    </a>
   </div>
 </template>
 
