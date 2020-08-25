@@ -3,7 +3,7 @@
     <div class="hero__image">
       <g-image
         class="hero__photo"
-        src="../../../assets/images/jay-mcmullen.jpg"
+        src="../../../assets/images/jay-mcmullen-2.jpg"
         alt
       />
       <Socials />
@@ -83,6 +83,7 @@ export default {
 
   &__photo {
     padding-right: 1rem;
+    max-width: 500px;
   }
 
   &__text {
