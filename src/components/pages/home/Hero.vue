@@ -3,7 +3,7 @@
     <div class="hero__image">
       <g-image
         class="hero__photo"
-        src="../../../assets/images/jay-mcmullen-2.jpg"
+        src="../../../assets/images/jay-mcmullen.jpg"
         alt
       />
       <Socials />
